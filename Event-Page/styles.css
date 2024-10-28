@@ -15,7 +15,7 @@ body {
   }
   
   .search-bar {
-    max-width: 800px; /* Aumentando a largura da barra de pesquisa */
+    max-width: 800px;
     width: 100%;
   }
   
@@ -34,7 +34,7 @@ body {
   .section-title {
     margin: 30px 0 10px;
     font-weight: bold;
-    text-align: center; /* Centralizando os títulos das seções */
+    text-align: center; 
   }
   
   /* Cards */
