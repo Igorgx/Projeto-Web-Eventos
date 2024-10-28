@@ -103,7 +103,16 @@ h1 {
   margin-left: 10px;
 }
 
-.search-bar{
-    max-width: 800px;
-    width: 100%;
+.search-bar {
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    width: 800px;
+    max-width: 100%;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
