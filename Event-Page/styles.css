@@ -1,0 +1,52 @@
+/* estilos.css */
+
+/* Estilos Gerais */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    color: #333 !important;
+  }
+  
+  .search-bar {
+    max-width: 800px; /* Aumentando a largura da barra de pesquisa */
+    width: 100%;
+  }
+  
+  /* Linha de Tags */
+  .tags {
+    margin-top: 15px;
+  }
+  
+  /* Ajustando estilo para os botões de filtro */
+  .filter-btn {
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  /* Títulos de Seções */
+  .section-title {
+    margin: 30px 0 10px;
+    font-weight: bold;
+    text-align: center; /* Centralizando os títulos das seções */
+  }
+  
+  /* Cards */
+  .card-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Centralizando conteúdo dos cards */
+  .card.text-center .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

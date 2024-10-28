@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Informações</title>
+    
+    <!--CSS do Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-home"></i>
+    </a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <form class="form-inline my-2 my-lg-0 search-bar">
+        <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
+      </form>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Fim da Navbar -->
+
+    <div class="container mt-5">
+        <!-- Título e Carrossel de Imagens -->
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="mb-4">Título do Evento</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image-not-found.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="placeholder1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Painel de Informações -->
+            <div class="col-md-4">
+                <div class="info-panel p-3 mb-4 bg-light border rounded">
+                    <h3>Informações base</h3>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                    </ul>
+                    <h3>Ações Adicionais</h3>
+                    <ul>
+                        <li><input type="checkbox"> Aula 1</li>
+                        <li><input type="checkbox"> Aula 2</li>
+                    </ul>
+                    <button class="btn btn-primary w-100 mt-3">Participar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição -->
+        <div class="description border-top pt-4 mt-4">
+            <h2>Descrição</h2>
+            <p>Detalhes do evento vão aqui...</p>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page de Eventos</title>
+
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-home"></i>
+    </a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <form class="form-inline my-2 my-lg-0 search-bar">
+        <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
+      </form>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Fim da Navbar -->
+
+  <!-- Linha de Tags (como botões de filtro) -->
+  <div class="container tags text-center">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary filter-btn">Popular</button>
+      <button type="button" class="btn btn-secondary filter-btn">Sugestões</button>
+      <button type="button" class="btn btn-success filter-btn">Novos Eventos</button>
+      <button type="button" class="btn btn-danger filter-btn">Tecnologia</button>
+      <button type="button" class="btn btn-warning filter-btn">Educação</button>
+      <button type="button" class="btn btn-info filter-btn">Negócios</button>
+    </div>
+  </div>
+  <!-- Fim da Linha de Tags -->
+
+  <!-- Seções de Eventos -->
+  <div class="container mt-4">
+    <!-- Seção Populares -->
+    <h5 class="section-title">Eventos Populares</h5>
+    <div class="row">
+      <!-- Card de Evento 1 -->
+      <div class="col-md-4 card-container">
+        <div class="card text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Evento 1">
+          <div class="card-body">
+            <h5 class="card-title">Título do Evento 1</h5>
+            <p class="card-text">Descrição breve do evento.</p>
+            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- Outros cards na seção Populares -->
+    </div>
+
+    <!-- Seção Sugestões -->
+    <h5 class="section-title">Sugestões de Eventos</h5>
+    <div class="row">
+      <div class="col-md-4 card-container">
+        <div class="card text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sugestão 1">
+          <div class="card-body">
+            <h5 class="card-title">Sugestão de Evento 1</h5>
+            <p class="card-text">Descrição breve do evento.</p>
+            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- Outros cards na seção Sugestões -->
+    </div>
+
+    <!-- Seção Novos Eventos -->
+    <h5 class="section-title">Novos Eventos</h5>
+    <div class="row">
+      <div class="col-md-4 card-container">
+        <div class="card text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Novo Evento 1">
+          <div class="card-body">
+            <h5 class="card-title">Novo Evento 1</h5>
+            <p class="card-text">Descrição breve do evento.</p>
+            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <!-- Outros cards na seção Novos Eventos -->
+    </div>
+  </div>
+  <!-- Fim das Seções de Eventos -->
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
