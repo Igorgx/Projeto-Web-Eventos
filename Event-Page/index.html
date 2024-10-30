@@ -14,29 +14,64 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="#">
-      <i class="fas fa-home"></i>
-    </a>
-    <div class="collapse navbar-collapse justify-content-center">
-      <form class="form-inline my-2 my-lg-0 search-bar">
-        <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
-      </form>
-    </div>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
-      </li>
-    </ul>
-  </nav>
-  <!-- Fim da Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+  <!-- Botão Home na NavBar -->
+  <a class="navbar-brand" href="../Event-Page/index.html">
+  <i class="fas fa-home"></i>
+  </a>
+
+  <!-- Input de Pesquisa na Navbar-->
+  <div class="collapse navbar-collapse justify-content-center">
+  <form class="form-inline my-2 my-lg-0 search-bar">
+      <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
+  </form>
+  </div>
+
+  <ul class="navbar-nav ml-auto">
+  <!-- Botão de Adcionar Evento na Navbar -->
+  <li class="nav-item">
+      <a class="nav-link" href="../Add-Event/index.html"><i class="fas fa-plus"></i></a>
+  </li> 
+
+  <!-- Botão de Calendário na Navbar -->
+  <li class="nav-item">
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#infoModal">
+      <i class="fas fa-calendar-alt"></i>
+      </a>
+  </li>
+
+  <!-- Modal do Calendario -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Informações de Eventos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+          <p>Lista de eventos que acontecera.</p>
+          <!-- Conteúdo adicional pode ser adicionado aqui -->
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+      </div>
+  </div>
+  
+  
+  
+  <!-- Botão de Perfil na Navbar -->
+  <li class="nav-item">
+      <a class="nav-link" href="../Perfil/index.html"><i class="fas fa-user"></i></a>
+  </li>
+  </ul>
+</nav>
+<!-- Fim da Navbar -->
 
   <!-- Linha de Tags (como botões de filtro) -->
   <div class="container tags text-center">

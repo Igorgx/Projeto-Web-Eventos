@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page de Eventos</title>
+
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- Botão Home na NavBar -->
+    <a class="navbar-brand" href="../Event-Page/index.html">
+    <i class="fas fa-home"></i>
+    </a>
+
+    <!-- Input de Pesquisa na Navbar-->
+    <div class="collapse navbar-collapse justify-content-center">
+    <form class="form-inline my-2 my-lg-0 search-bar">
+        <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
+    </form>
+    </div>
+
+    <ul class="navbar-nav ml-auto">
+    <!-- Botão de Adcionar Evento na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="../Add-Event/index.html"><i class="fas fa-plus"></i></a>
+    </li> 
+
+    <!-- Botão de Calendário na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#infoModal">
+        <i class="fas fa-calendar-alt"></i>
+        </a>
+    </li>
+
+    <!-- Modal do Calendario -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Informações de Eventos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>Lista de eventos que acontecera.</p>
+            <!-- Conteúdo adicional pode ser adicionado aqui -->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Botão de Perfil na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="../Perfil/index.html"><i class="fas fa-user"></i></a>
+    </li>
+    </ul>
+</nav>
+<!-- Fim da Navbar -->
+
+<!-- Formulário de Criação de Evento -->
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center mb-4">Criar Novo Evento</h2>
+        <form>
+            <!-- Imagemgit do Evento -->
+            <div class="mb-4">
+                <h5>Imagem do Evento</h5>
+                <div class="mb-3">
+                    <label for="eventImage" class="form-label">Escolha uma imagem para seu evento</label>
+                    <input type="file" class="form-control" id="eventImage" accept="image/*" onchange="previewImage(this)">
+                    <div class="image-preview" id="imagePreview">
+                        <span class="text-muted">Visualização da Imagemm"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Básicas -->
+            <div class="mb-4">
+                <h5>Informações Básicas</h5>
+                <div class="mb-3">
+                    <label for="eventName" class="form-label">Nome do Evento</label>
+                    <input type="text" class="form-control" id="eventName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="eventDescription" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="eventDescription" rows="3" required></textarea>
+                </div>
+            </div>
+
+            <!-- Data e Hora -->
+            <div class="mb-4">
+                <h5>Data e Hora</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="eventDate" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="eventDate" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="eventTime" class="form-label">Hora</label>
+                        <input type="time" class="form-control" id="eventTime" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Localização -->
+            <div class="mb-4">
+                <h5>Localização</h5>
+                <div class="mb-3">
+                    <label for="eventLocation" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="eventLocation" required>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="eventCity" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="eventCity" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="eventState" class="form-label">Estado</label>
+                        <select class="form-select" id="eventState" required>
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="eventZip" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="eventZip" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Configurações do Evento -->
+            <div class="mb-4">
+                <h5>Configurações do Evento</h5>
+                <div class="mb-3">
+                    <label for="eventCategory" class="form-label">Categoria</label>
+                    <select class="form-select" id="eventCategory" required>
+                        <option value="">Selecione...</option>
+                        <option value="festa">Festa</option>
+                        <option value="conferencia">Conferência</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="maxParticipants" class="form-label">Número Máximo de Participantes</label>
+                    <input type="number" class="form-control" id="maxParticipants" min="1">
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="isPrivate">
+                        <label class="form-check-label" for="isPrivate">
+                            Evento Privado
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Opcionais (Nova Seção) -->
+            <div class="mb-4">
+                <h5>Informações Opcionais</h5>
+                <div class="mb-3">
+                    <label for="eventTags" class="form-label">Tags do Evento</label>
+                    <input type="text" class="form-control" id="eventTags" placeholder="Separe as tags por vírgula">
+                </div>
+                <div class="mb-3">
+                    <label for="eventWebsite" class="form-label">Website do Evento</label>
+                    <input type="url" class="form-control" id="eventWebsite" placeholder="https://...">
+                </div>
+                <div class="mb-3">
+                    <label for="eventContact" class="form-label">Contato para Dúvidas</label>
+                    <input type="email" class="form-control" id="eventContact" placeholder="email@exemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="additionalInfo" class="form-label">Informações Adicionais</label>
+                    <textarea class="form-control" id="additionalInfo" rows="3" placeholder="Outras informações relevantes sobre o evento..."></textarea>
+                </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="d-flex justify-content-center mt-5">
+                <button type="button" class="btn btn-secondary mr-5 px-4">Cancelar</button>
+                <button type="submit" class="btn btn-primary px-4">Criar Evento</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
