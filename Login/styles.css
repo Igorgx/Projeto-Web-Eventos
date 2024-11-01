@@ -45,7 +45,7 @@ body {
     margin-top: 10px;
 }
 .image-placeholder {
-    width: 250px;
+    width: 300px;
     height: 200px;
     background-color: #b0b8c1;
     border-radius: 8px;
@@ -57,7 +57,7 @@ body {
 }
 
 #imagem_unifor{
-    width: 250px;
+    width: 300px;
     height: 200px;
     border-radius: 8px;
     display: flex;
