@@ -15,28 +15,32 @@ body {
     display: flex;
     align-items: center;
 }
+
 .login-form {
     width: 250px;
     margin-right: 20px;
 }
+
 .login-form h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
+
 .form-control {
     border-radius: 5px;
 }
+
 .form-check-label {
     font-size: 14px;
     color: #666;
 }
 .btn-primary {
-    background-color: blue;
     border-color: #6c63ff;
     width: 100%;
     margin-top: 15px;
 }
+
 .forgot-password {
     font-size: 14px;
     color: #6c63ff;
@@ -44,8 +48,9 @@ body {
     display: block;
     margin-top: 10px;
 }
+
 .image-placeholder {
-    width: 250px;
+    width: 300px;
     height: 200px;
     background-color: #b0b8c1;
     border-radius: 8px;
@@ -57,7 +62,7 @@ body {
 }
 
 #imagem_unifor{
-    width: 250px;
+    width: 300px;
     height: 200px;
     border-radius: 8px;
     display: flex;
