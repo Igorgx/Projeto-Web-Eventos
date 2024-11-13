@@ -1,0 +1,54 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de build
+build/
+dist/
+out/
+
+# Arquivos temporários do editor
+*.swp
+*.swo
+*~
+
+# Dependências
+node_modules/
+vendor/
+venv/
+
+# Arquivos de log
+*.log
+
+# Configurações locais
+.env
+config.yaml
+*.local
+
+# Cache de pacotes
+__pycache__/
+*.py[cod]
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos de compilação e temporários
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+
+# Arquivos de compressão
+*.zip
+*.tar.gz
+*.rar
+
+# Outros arquivos sensíveis
+*.key
+*.pem
+*.crt
