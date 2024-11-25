@@ -11,10 +11,15 @@
   "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
+=======
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+>>>>>>> 5d06feabb1b2fcf3d9147faf84287f2080d04482
     "mysql2": "^3.11.4"
   }
 }
