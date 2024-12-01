@@ -16,135 +16,84 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-
   <!-- Botão Home na NavBar -->
   <a class="navbar-brand" href="../Event-Page/index.html">
-  <i class="fas fa-home"></i>
+    <i class="fas fa-home"></i>
   </a>
 
   <!-- Input de Pesquisa na Navbar-->
   <div class="collapse navbar-collapse justify-content-center">
-  <form class="form-inline my-2 my-lg-0 search-bar">
-      <input class="form-control mr-sm-2 w-100" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
-  </form>
+    <form class="form-inline my-2 my-lg-0 search-bar">
+        <input id="searchInput" class="form-control" type="search" placeholder="Pesquisar eventos..." aria-label="Pesquisar">
+    </form>
   </div>
 
   <ul class="navbar-nav ml-auto">
-  <!-- Botão de Adcionar Evento na Navbar -->
-  <li class="nav-item">
-      <a class="nav-link" href="../Add-Event/index.html"><i class="fas fa-plus"></i></a>
-  </li> 
+    <!-- Botão de Adicionar Evento na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="../Add-Event/index.html"><i class="fas fa-plus"></i></a>
+    </li> 
 
-  <!-- Botão de Calendário na Navbar -->
-  <li class="nav-item">
-      <a class="nav-link" href="#" data-toggle="modal" data-target="#infoModal">
-      <i class="fas fa-calendar-alt"></i>
-      </a>
-  </li>
+    <!-- Botão de Calendário na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#infoModal">
+        <i class="fas fa-calendar-alt"></i>
+        </a>
+    </li>
 
-  <!-- Modal do Calendario -->
-  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title" id="infoModalLabel">Informações de Eventos</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-          </button>
-          </div>
-          <div class="modal-body">
-          <p>Lista de eventos que acontecera.</p>
-          <!-- Conteúdo adicional pode ser adicionado aqui -->
-          </div>
-          <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          </div>
-      </div>
-      </div>
-  </div>
-  
-  
-  
-  <!-- Botão de Perfil na Navbar -->
-  <li class="nav-item">
-      <a class="nav-link" href="../Perfil/index.html"><i class="fas fa-user"></i></a>
-  </li>
+    <!-- Modal do Calendario -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Informações de Eventos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <p>Lista de eventos que acontecerão.</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Botão de Perfil na Navbar -->
+    <li class="nav-item">
+        <a class="nav-link" href="../Perfil/index.html"><i class="fas fa-user"></i></a>
+    </li>
   </ul>
 </nav>
-<!-- Fim da Navbar -->
 
-  <!-- Linha de Tags (como botões de filtro) -->
-  <div class="container tags text-center">
-    <div class="btn-group" role="group">
-      <button type="button" class="btn btn-primary filter-btn">Popular</button>
-      <button type="button" class="btn btn-secondary filter-btn">Sugestões</button>
-      <button type="button" class="btn btn-success filter-btn">Novos Eventos</button>
-      <button type="button" class="btn btn-danger filter-btn">Tecnologia</button>
-      <button type="button" class="btn btn-warning filter-btn">Educação</button>
-      <button type="button" class="btn btn-info filter-btn">Negócios</button>
-    </div>
+<!-- Filtro de Tags -->
+<div class="container tags text-center">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary filter-btn" data-category="all">Todos</button>
+    <button type="button" class="btn btn-secondary filter-btn" data-category="popular">Popular</button>
+    <button type="button" class="btn btn-success filter-btn" data-category="sugestões">Sugestões</button>
+    <button type="button" class="btn btn-danger filter-btn" data-category="tecnologia">Tecnologia</button>
+    <button type="button" class="btn btn-warning filter-btn" data-category="educação">Educação</button>
+    <button type="button" class="btn btn-info filter-btn" data-category="negócios">Negócios</button>
   </div>
-  <!-- Fim da Linha de Tags -->
+</div>
 
-  <!-- Seções de Eventos -->
-  <div class="container mt-4">
-    <!-- Seção Populares -->
-    <h5 class="section-title">Eventos Populares</h5>
-    <div class="row">
-      <!-- Card de Evento 1 -->
-      <div class="col-md-4 card-container">
-        <div class="card text-center">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Evento 1">
-          <div class="card-body">
-            <h5 class="card-title">Título do Evento 1</h5>
-            <p class="card-text">Descrição breve do evento.</p>
-            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Outros cards na seção Populares -->
-    </div>
-
-    <!-- Seção Sugestões -->
-    <h5 class="section-title">Sugestões de Eventos</h5>
-    <div class="row">
-      <div class="col-md-4 card-container">
-        <div class="card text-center">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sugestão 1">
-          <div class="card-body">
-            <h5 class="card-title">Sugestão de Evento 1</h5>
-            <p class="card-text">Descrição breve do evento.</p>
-            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Outros cards na seção Sugestões -->
-    </div>
-
-    <!-- Seção Novos Eventos -->
-    <h5 class="section-title">Novos Eventos</h5>
-    <div class="row">
-      <div class="col-md-4 card-container">
-        <div class="card text-center">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Novo Evento 1">
-          <div class="card-body">
-            <h5 class="card-title">Novo Evento 1</h5>
-            <p class="card-text">Descrição breve do evento.</p>
-            <a href="../Card-Evento/index.html" class="btn btn-primary">Saber mais</a>
-          </div>
-        </div>
-      </div>
-      <!-- Outros cards na seção Novos Eventos -->
-    </div>
+<!-- Seções de Eventos -->
+<main>
+  <div id="event-cards-container" class="cards-container">
+    <!-- Cards dinâmicos serão inseridos aqui -->
   </div>
-  <!-- Fim das Seções de Eventos -->
+</main>
 
-  <!-- Scripts do Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Script personalizado -->
-  <script src="script.js"></script>
+<!-- Script personalizado -->
+<script src="script.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+function redirecionar() {
+    window.location.href = '../Event-Page/index.html';
+}
+
 document.querySelector('form').addEventListener('submit', async (event) => {
     event.preventDefault(); // Previne o comportamento padrão do formulário
 
@@ -24,12 +28,12 @@ document.querySelector('form').addEventListener('submit', async (event) => {
         // Exibe mensagem de sucesso e armazena o token
         alert('Login realizado com sucesso!');
         localStorage.setItem('token', data.token); // Armazena o token no localStorage
-        // Redireciona para outra página (opcional)
-        // window.location.href = '/dashboard.html';
+
+        // Redireciona para outra página
+        redirecionar(); // Chama a função redirecionar
     } catch (error) {
         // Trata erros de conexão ou outros problemas
         console.error('Erro:', error);
-        alert(`Erro ao conectar ao servidor: ${error.message}`);
+        alert('Erro ao conectar ao servidor: ${error.message}');
     }
 });
-

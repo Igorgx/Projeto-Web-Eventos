@@ -1,52 +1,77 @@
-/* estilos.css */
-
-/* Estilos Gerais */
+/* Estilos gerais */
 body {
-    background-color: #f8f9fa;
-  }
-  
-  /* Navbar */
-  .navbar {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-link {
-    color: #333 !important;
-  }
-  
-  .search-bar {
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  /* Linha de Tags */
-  .tags {
-    margin-top: 15px;
-  }
-  
-  /* Ajustando estilo para os botões de filtro */
-  .filter-btn {
-    margin: 2px;
-    cursor: pointer;
-  }
-  
-  /* Títulos de Seções */
-  .section-title {
-    margin: 30px 0 10px;
-    font-weight: bold;
-    text-align: center; 
-  }
-  
-  /* Cards */
-  .card-container {
-    margin-bottom: 20px;
-  }
-  
-  /* Centralizando conteúdo dos cards */
-  .card.text-center .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar input {
+  width: 100%; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.tags {
+  margin-top: 20px; 
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Estilos dos cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+  height: 250px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card .event-date {
+  font-weight: bold;
+  color: #333;
+}
